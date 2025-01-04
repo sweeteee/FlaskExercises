@@ -18,7 +18,7 @@ def blog_list():
 # @app.route("/blog/<blog_id>")
 @app.route("/blog/<int:blog_id>") #限定数字参数
 def blog_detail(blog_id):
-    return "您访问的博客是：%s" %blog_id
+    return "您访问的博客是：%d" %blog_id
 
 # /book/list 返回第一页数据
 # /book/list?page=2 获取第二页的数据
