@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>控制语句Demo</title>
+</head>
+<body>
+{% if age>18 %}
+    <div>已成年</div>
+{% elif age==18 %}
+    <div>刚成年</div>
+{% else %}
+    <div>未成年</div>
+{% endif %}
+{% for book in books %}
+<div>名称：{{ book.name }},所有者：{{ book.author }}</div>
+{% endfor %}
+</body>
+</html>
